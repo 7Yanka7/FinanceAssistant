@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
       Balance balance = new Balance();
         Writer writerFileData = null;
         Reader readerFileData = null;
@@ -33,6 +33,10 @@ public class Main {
                 System.out.println(arr.get(i));
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        finally {
+            writerFileData.close();
+            readerFileData.close();
         }
 
     }
