@@ -11,7 +11,7 @@ public class Main {
         Writer writerFileData = null;
         Reader readerFileData = null;
         try{
-            String fileData = "Data.txt";
+            String fileData =  "Data.txt";
             writerFileData = new FileWriter(fileData);
             CategoryOfRevenue categRev =  new CategoryOfRevenue("Scholarship");
             CategoryOfCosts categRev1 =  new CategoryOfCosts("Transport");
